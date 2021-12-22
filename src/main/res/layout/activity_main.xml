@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#79A5FF"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/bank_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Введіть ім'я та натисніть далі"
+        android:textAlignment="center"
+        android:textColor="#006064"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="52dp"
+        android:fontFamily="casual"
+        android:text="Прикладіть картку"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#006064"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/imageView0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="251dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="164dp"
+        android:background="@android:color/darker_gray"
+        android:ems="10"
+        android:hint="Введіть ім'я та натисніть, далі"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+
+        android:textAlignment="center"
+        android:textColor="#455A64"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button1"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="110dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="148dp"
+        android:background="@android:color/darker_gray"
+        android:text="Далі"
+        android:onClick="onMyButtonClick2"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:backgroundTint="#575757"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="65dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="40dp"
+        android:background="#00FF0000"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="69dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="40dp"
+        android:background="#00FF0000"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/imageView1"
+        app:layout_constraintTop_toTopOf="@+id/imageView0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="69dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="40dp"
+        android:background="#00FF0000"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="69dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:background="#00FF0000"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="69dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="40dp"
+        android:background="#00FF0000"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="60dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="40dp"
+        android:background="#00FF0000"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="69dp"
+        android:layout_height="66dp"
+        android:background="#00FF0000"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+    <ImageView
+        android:id="@+id/imageView8"
+
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+
+        android:background="#00FF0000"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+
+        android:background="#00FF0000"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+
+        android:background="#00FF0000"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintEnd_toStartOf="@+id/imageView11"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+
+        android:background="#00FF0000"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+        app:layout_constraintEnd_toStartOf="@+id/imageView12"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+    <ImageView
+        android:id="@+id/imageView12"
+
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+
+        android:layout_marginTop="20dp"
+        android:background="#00FF0000"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+
+        android:layout_marginTop="24dp"
+        android:background="#00FF0000"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+
+        android:background="#00FF0000"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+
+        android:background="#00FF0000"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView16"
+        app:layout_constraintStart_toEndOf="@+id/imageView14"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+
+        android:background="#00FF0000"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView17"
+        app:layout_constraintEnd_toStartOf="@+id/imageView17"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+
+        android:background="#0000FF00"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView18"
+        app:layout_constraintEnd_toStartOf="@+id/imageView18"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+
+        android:layout_marginTop="24dp"
+        android:background="#00FF0000"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageView0"
+        android:layout_width="0dp"
+        android:layout_height="340dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/backg3"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
